@@ -10,7 +10,7 @@ def handle_url(base_url, page):
     return r.url
 
 
-# 调you-get工具进行下载
+# 调you-get工具进行下载，-o参数指定下载文件存放路径
 def cmd_download(dowmload_url):
     info = os.system(r'you-get  -o H:\学习资料\GIT学习视频   --format=dash-flv720  {}'.format(dowmload_url))
     print(info)
